@@ -18,6 +18,6 @@ imageName = input("File name : ")
 
 bytesArray = imageConvert(imageName)
 
-showImage(imageName)
+#showImage(imageName)
 
 fourierTransform(imageName)
