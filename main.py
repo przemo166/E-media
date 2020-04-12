@@ -7,6 +7,7 @@ sys.path.append(os.path.abspath("/home/przemek/Pulpit/E-media_repo/E-media/funct
 from analizeIHDR import *
 from bytesArray import *
 from showImage import *
+from fourierTransform import *
 
 ####################
 #   Main file      #
@@ -16,6 +17,7 @@ from showImage import *
 imageName = input("File name : ")
 
 bytesArray = imageConvert(imageName)
-#showImage(imageName)
-#print(bytesArray)
-#analizeIHDR(bytesArray)
+
+showImage(imageName)
+
+fourierTransform(imageName)
