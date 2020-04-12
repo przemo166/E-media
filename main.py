@@ -8,6 +8,7 @@ from analizeIHDR import *
 from bytesArray import *
 from showImage import *
 from fourierTransform import *
+from checkSignature import *
 
 ####################
 #   Main file      #
@@ -16,8 +17,10 @@ from fourierTransform import *
 # A variable for our image name
 imageName = input("File name : ")
 
-bytesArray = imageConvert(imageName)
+hexArray = imageConvert(imageName)
 
-#showImage(imageName)
+checkPng(imageName)
 
 fourierTransform(imageName)
+
+print(hexArray)
