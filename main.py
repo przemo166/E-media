@@ -23,8 +23,10 @@ x = checkPng(imageName)
 if x==True:
     print("Signature ok")
     hexArray = imageConvert(imageName)
+    analizeIHDR(hexArray)
+    showImage(imageName)
     fourierTransform(imageName)
-    print(hexArray)
+    #print(hexArray)
 
 # If our file is not png file we do nothing
 else :
