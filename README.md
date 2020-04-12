@@ -2,3 +2,7 @@
 
 Wybrany format plików : PNG
 
+# 1.Show image function 
+
+![Zdjęcie projektu ](readme_images/showImage.png "fig:") [fig:my~l~abel]
+
