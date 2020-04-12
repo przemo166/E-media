@@ -5,6 +5,6 @@ def checkPng (imageName):
     with open('example_files/{}'.format(imageName), 'rb') as f:
         hexData = f.read().hex()
     if hexData[0:16] != "89504e470d0a1a0a":
-        print("signature fail")
+        return False
     else:
-        print("signature ok")
+        return True

@@ -16,11 +16,16 @@ from checkSignature import *
 
 # A variable for our image name
 imageName = input("File name : ")
+# A variable to check if our file is png file
+x = checkPng(imageName)
 
-hexArray = imageConvert(imageName)
+# Further actions (if we have a png file)
+if x==True:
+    print("Signature ok")
+    hexArray = imageConvert(imageName)
+    fourierTransform(imageName)
+    print(hexArray)
 
-checkPng(imageName)
-
-fourierTransform(imageName)
-
-print(hexArray)
+# If our file is not png file we do nothing
+else :
+    print("Signature fail")
