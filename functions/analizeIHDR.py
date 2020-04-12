@@ -12,13 +12,15 @@ def analizeIHDR (hexArray):
     widthDecimal = int(width,16)
     position+=8
 
-    print("\nReading IHDR chunk")
+    print("\n######################")
+    print("# Reading IHDR chunk #")
+    print("######################")
 
     ########################################################
     # Width and height give the image dimensions in pixels #
     # First 8 bytes of this chunk                          #
     ########################################################
-    var = "Width : " + str(widthDecimal)
+    var = "\nWidth : " + str(widthDecimal)
     print(var)
 
     height = hexArray[position:position+8]
@@ -46,7 +48,7 @@ def analizeIHDR (hexArray):
     # variants are saved in enum below                     #
     ########################################################
 
-    class colorType (Enum):
+    class colourTypeEnum (Enum):
         GREYSCALE = 0
         TRUECOLOUR = 2
         INDEXED_COLOUR = 3
@@ -59,9 +61,64 @@ def analizeIHDR (hexArray):
 
     tmpInt = colourTypeDecimal
 
-    var = "Colour type : " + str(colorType(tmpInt))
+    var = "Colour type : " + str(colourTypeEnum(tmpInt).name)
     print(var)
 
+    ########################################################
+    # Next byte is compression method                      #
+    # variants are saved in enum below                     #
+    # All conforming PNG images shall be compressed with   #
+    # method 0 (deflate/inflate compression with a         #
+    # sliding window of at most 32768 bytes)               #
+    ########################################################
 
+    class compressionMethodEnum (Enum):
+        DEFLATE_INFLATE = 0
 
-    
+    compressionMethod = hexArray[position:position+2]
+    compressionMethodDecimal= int(compressionMethod,16)
+    position+=2
+
+    tmpInt = compressionMethodDecimal
+
+    var = "Compression method : " + str(compressionMethodEnum(tmpInt).name)
+    print(var)
+
+    ########################################################
+    # Next byte is filter method                           #
+    # variants are saved in enum below                     #
+    ########################################################
+
+    class filterMethodEnum (Enum):
+        NONE = 0
+        SUB = 1
+        UP = 2
+        AVERAGE = 3
+        PAETH = 4
+
+    filterMethod = hexArray[position:position+2]
+    filterMethodDecimal= int(filterMethod,16)
+    position+=2
+
+    tmpInt = filterMethodDecimal
+
+    var = "Filter method : " + str(filterMethodEnum(tmpInt).name)
+    print(var)
+
+    ########################################################
+    # Next byte is interlace method                        #
+    # variants are saved in enum below                     #
+    # method 0, the null method, method 1 = Adam7 method   #
+    ########################################################
+
+    class interlaceMethodEnum (Enum):
+        NULL = 0
+        ADAM7 = 1
+
+    interlaceMethod = hexArray[position:position+2]
+    interlaceMethodDecimal= int(interlaceMethod,16)
+
+    tmpInt = interlaceMethodDecimal
+
+    var = "Interlace method : " + str(interlaceMethodEnum(tmpInt).name)
+    print(var)
