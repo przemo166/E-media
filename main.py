@@ -1,15 +1,21 @@
 #!/usr/bin/python3
 
-# Importing modules to show png image
-import matplotlib.image as mpimg
-import matplotlib.pyplot as plt
-from PIL import Image
+# Importing files from directory /functions
+import sys
+import os
+sys.path.append(os.path.abspath("/home/przemek/Pulpit/E-media_repo/E-media/functions"))
+from analizeIHDR import *
+from bytesArray import *
+from showImage import *
 
 ####################
 #   Main file      #
 ####################
 
+# A variable for our image name
 imageName = input("File name : ")
 
-img = Image.open('example_files/{}'.format(imageName))
-img.show()
+bytesArray = imageConvert(imageName)
+#showImage(imageName)
+#print(bytesArray)
+analizeIHDR(bytesArray)
