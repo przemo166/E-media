@@ -3,7 +3,7 @@
 # Importing files from directory /functions
 import sys
 import os
-sys.path.append(os.path.abspath("/home/przemek/Pulpit/E-media_repo/E-media/functions"))
+sys.path.append(os.path.abspath("functions"))
 from analizeIHDR import *
 from bytesArray import *
 from showImage import *
