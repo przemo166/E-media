@@ -16,3 +16,13 @@ Wybrany format plików : PNG
 
 ![Zdjęcie projektu ](github_images/IHDR.png "fig:") 
 [fig:my~l~abel]
+
+# 4.PLTE analizing function
+
+![Zdjęcie projektu ](github_images/PLTE_terminal.png "fig:")
+[fig:my~l~abel]
+
+![Zdjęcie projektu ](github_images/PLTE_file.png "fig:")
+[fig:my~l~abel]
+
+
