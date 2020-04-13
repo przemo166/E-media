@@ -6,119 +6,129 @@ from enum import Enum
 # Function that analizes the IHDR chunk
 def analizeIHDR (hexArray):
     position = hexArray.find("49484452")
-    position += 8
 
-    width = hexArray[position:position+8]
-    widthDecimal = int(width,16)
-    position+=8
+    # The find() method returns the index
+    # of first occurrence of the substring (if found).
+    # If not found, it returns -1
 
-    print("\n######################")
-    print("# Reading IHDR chunk #")
-    print("######################")
+    if position!=-1:
+        print("IHDR found")
+        position += 8
 
-    ########################################################
-    # Width and height give the image dimensions in pixels #
-    # First 8 bytes of this chunk                          #
-    ########################################################
-    var = "\nWidth : " + str(widthDecimal)
-    print(var)
+        width = hexArray[position:position+8]
+        widthDecimal = int(width,16)
+        position+=8
 
-    height = hexArray[position:position+8]
-    heightDecimal = int(height,16)
-    position += 8
+        print("\n######################")
+        print("# Reading IHDR chunk #")
+        print("######################")
 
-    var = "Height : " + str(heightDecimal)
-    print(var)
+        ########################################################
+        # Width and height give the image dimensions in pixels #
+        # First 8 bytes of this chunk                          #
+        #########################################################
+        var = "\nWidth : " + str(widthDecimal)
+        print(var)
 
-    ########################################################
-    # Next byte is bit depth                               #
-    # integer giving the number of bits per sample         #
-    # or per palette index (not per pixel)                 #
-    ########################################################
+        height = hexArray[position:position+8]
+        heightDecimal = int(height,16)
+        position += 8
 
-    bitDepth = hexArray[position:position+2]
-    bitDepthDecimal = int(bitDepth,16)
-    position+=2
+        var = "Height : " + str(heightDecimal)
+        print(var)
 
-    var = "Bit depth : " + str(bitDepthDecimal)
-    print(var)
+        ########################################################
+        # Next byte is bit depth                               #
+        # integer giving the number of bits per sample         #
+        # or per palette index (not per pixel)                 #
+        ########################################################
 
-    ########################################################
-    # Next byte is colour type                             #
-    # variants are saved in enum below                     #
-    ########################################################
+        bitDepth = hexArray[position:position+2]
+        bitDepthDecimal = int(bitDepth,16)
+        position+=2
 
-    class colourTypeEnum (Enum):
-        GREYSCALE = 0
-        TRUECOLOUR = 2
-        INDEXED_COLOUR = 3
-        GREYSCALE_WITH_ALPHA = 4
-        TRUECOLOUR_WITH_ALPHA = 6
+        var = "Bit depth : " + str(bitDepthDecimal)
+        print(var)
 
-    colourType = hexArray[position:position+2]
-    colourTypeDecimal = int(colourType,16)
-    position+=2
+        ########################################################
+        # Next byte is colour type                             #
+        # variants are saved in enum below                     #
+        ########################################################
 
-    tmpInt = colourTypeDecimal
+        class colourTypeEnum (Enum):
+            GREYSCALE = 0
+            TRUECOLOUR = 2
+            INDEXED_COLOUR = 3
+            GREYSCALE_WITH_ALPHA = 4
+            TRUECOLOUR_WITH_ALPHA = 6
 
-    var = "Colour type : " + str(colourTypeEnum(tmpInt).name)
-    print(var)
+        colourType = hexArray[position:position+2]
+        colourTypeDecimal = int(colourType,16)
+        position+=2
 
-    ########################################################
-    # Next byte is compression method                      #
-    # variants are saved in enum below                     #
-    # All conforming PNG images shall be compressed with   #
-    # method 0 (deflate/inflate compression with a         #
-    # sliding window of at most 32768 bytes)               #
-    ########################################################
+        tmpInt = colourTypeDecimal
 
-    class compressionMethodEnum (Enum):
-        DEFLATE_INFLATE = 0
+        var = "Colour type : " + str(colourTypeEnum(tmpInt).name)
+        print(var)
 
-    compressionMethod = hexArray[position:position+2]
-    compressionMethodDecimal= int(compressionMethod,16)
-    position+=2
+        ########################################################
+        # Next byte is compression method                      #
+        # variants are saved in enum below                     #
+        # All conforming PNG images shall be compressed with   #
+        # method 0 (deflate/inflate compression with a         #
+        # sliding window of at most 32768 bytes)               #
+        ########################################################
 
-    tmpInt = compressionMethodDecimal
+        class compressionMethodEnum (Enum):
+            DEFLATE_INFLATE = 0
 
-    var = "Compression method : " + str(compressionMethodEnum(tmpInt).name)
-    print(var)
+        compressionMethod = hexArray[position:position+2]
+        compressionMethodDecimal= int(compressionMethod,16)
+        position+=2
 
-    ########################################################
-    # Next byte is filter method                           #
-    # variants are saved in enum below                     #
-    ########################################################
+        tmpInt = compressionMethodDecimal
 
-    class filterMethodEnum (Enum):
-        NONE = 0
-        SUB = 1
-        UP = 2
-        AVERAGE = 3
-        PAETH = 4
+        var = "Compression method : " + str(compressionMethodEnum(tmpInt).name)
+        print(var)
 
-    filterMethod = hexArray[position:position+2]
-    filterMethodDecimal= int(filterMethod,16)
-    position+=2
+        ########################################################
+        # Next byte is filter method                           #
+        # variants are saved in enum below                     #
+        ########################################################
 
-    tmpInt = filterMethodDecimal
+        class filterMethodEnum (Enum):
+            NONE = 0
+            SUB = 1
+            UP = 2
+            AVERAGE = 3
+            PAETH = 4
 
-    var = "Filter method : " + str(filterMethodEnum(tmpInt).name)
-    print(var)
+        filterMethod = hexArray[position:position+2]
+        filterMethodDecimal= int(filterMethod,16)
+        position+=2
 
-    ########################################################
-    # Next byte is interlace method                        #
-    # variants are saved in enum below                     #
-    # method 0, the null method, method 1 = Adam7 method   #
-    ########################################################
+        tmpInt = filterMethodDecimal
 
-    class interlaceMethodEnum (Enum):
-        NULL = 0
-        ADAM7 = 1
+        var = "Filter method : " + str(filterMethodEnum(tmpInt).name)
+        print(var)
 
-    interlaceMethod = hexArray[position:position+2]
-    interlaceMethodDecimal= int(interlaceMethod,16)
+        ########################################################
+        # Next byte is interlace method                        #
+        # variants are saved in enum below                     #
+        # method 0, the null method, method 1 = Adam7 method   #
+        ########################################################
 
-    tmpInt = interlaceMethodDecimal
+        class interlaceMethodEnum (Enum):
+            NULL = 0
+            ADAM7 = 1
 
-    var = "Interlace method : " + str(interlaceMethodEnum(tmpInt).name)
-    print(var)
+        interlaceMethod = hexArray[position:position+2]
+        interlaceMethodDecimal= int(interlaceMethod,16)
+
+        tmpInt = interlaceMethodDecimal
+
+        var = "Interlace method : " + str(interlaceMethodEnum(tmpInt).name)
+        print(var)
+
+    else:
+        print("IHDR not found")

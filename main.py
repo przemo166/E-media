@@ -9,6 +9,7 @@ from bytesArray import *
 from showImage import *
 from fourierTransform import *
 from checkSignature import *
+from analizePLTE import *
 
 ####################
 #   Main file      #
@@ -21,11 +22,15 @@ x = checkPng(imageName)
 
 # Further actions (if we have a png file)
 if x==True:
-    print("Signature ok")
+    print("Signature ok\n")
     hexArray = imageConvert(imageName)
+    # Analizing critical chunks
     analizeIHDR(hexArray)
+    analizePLTE(hexArray)
+    # end
     showImage(imageName)
     fourierTransform(imageName)
+    #print(hexArray)
 
 # If our file is not png file we do nothing
 else :

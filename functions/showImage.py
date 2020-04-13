@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
 # Importing modules to show .png image
-from PIL import Image
+import cv2
 
 # Function that shows our image
 def showImage(imageName):
-    img = Image.open('example_files/{}'.format(imageName))
-    img.show(title="Image")
+    img = cv2.imread('example_files/{}'.format(imageName))
+    cv2.imshow('Our image',img)
