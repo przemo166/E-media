@@ -18,6 +18,18 @@ def analizePLTE (hexArray):
         print("# Reading PLTE chunk #")
         print("######################")
 
+        #############################################################
+        # The PLTE chunk contains from 1 to 256 palette entries,    #
+        # each a three-byte series of the form:                     #
+        #                                                           #
+        # Red:   1 byte (0 = black, 255 = red)                      #
+        # Green: 1 byte (0 = black, 255 = green)                    #
+        # Blue:  1 byte (0 = black, 255 = blue)                     #
+        #                                                           #
+        # The number of entries is determined from the chunk        #
+        # length. A chunk length not divisible by 3 is an error.    #
+        #############################################################
+
         chunkLenght = hexArray[(position-8):position]
         chunkLenghtDecimal = int(chunkLenght,16)
         position+=8
@@ -44,7 +56,6 @@ def analizePLTE (hexArray):
 
             var = "Palete entry " + str(i) + " " + "| Red : " + str(tmpRedDecimal) + " Green : " + str(tmpGreenDecimal) + " Blue : " + str(tmpBlueDecimal) + " |"
             f.write( var + "\n"  )
-            #print(var)
 
             i+=1
 

@@ -30,7 +30,6 @@ if x==True:
     # end
     showImage(imageName)
     fourierTransform(imageName)
-    #print(hexArray)
 
 # If our file is not png file we do nothing
 else :
