@@ -9,7 +9,7 @@ def readIDAT (hexArray):
     # If not found, it returns -1
 
     if position!=-1:
-        print("\nIDAT found")
+        print("\n3. IDAT found")
 
         print("\n######################")
         print("# Reading IDAT chunk #")
@@ -45,4 +45,4 @@ def readIDAT (hexArray):
         print("Output saved in a .txt file in /data directory\n")
 
     else:
-        print("\nIDAT not found")
+        print("\n3. IDAT not found")

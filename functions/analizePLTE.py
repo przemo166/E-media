@@ -12,7 +12,7 @@ def analizePLTE (hexArray):
     # If not found, it returns -1
 
     if position!=-1:
-        print("\nPLTE found")
+        print("\n2. PLTE found")
 
         print("\n######################")
         print("# Reading PLTE chunk #")
@@ -64,4 +64,4 @@ def analizePLTE (hexArray):
         print("Entries saved in a .txt file in /data directory\n")
 
     else:
-        print("\nPLTE not found")
+        print("\n2. PLTE not found")

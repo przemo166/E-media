@@ -12,7 +12,7 @@ def analizeIHDR (hexArray):
     # If not found, it returns -1
 
     if position!=-1:
-        print("IHDR found")
+        print("1. IHDR found")
         position += 8
 
         width = hexArray[position:position+8]
@@ -131,4 +131,4 @@ def analizeIHDR (hexArray):
         print(var)
 
     else:
-        print("IHDR not found")
+        print("1. IHDR not found")

@@ -12,6 +12,7 @@ from analizePLTE import *
 from analizeIHDR import *
 from readIDAT import *
 from findIEND import *
+from ancillaryChunks import *
 
 ####################
 #   Main file      #
@@ -32,6 +33,11 @@ if x==True:
     readIDAT(hexArray)
     findIEND(hexArray)
     # end
+
+    # Analizing ancillary chunks
+    findAncillary(hexArray)
+    # end
+
     showImage(imageName)
     fourierTransform(imageName)
 

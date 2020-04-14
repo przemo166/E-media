@@ -9,7 +9,7 @@ def findIEND (hexArray):
     # If not found, it returns -1
 
     if position!=-1:
-        print("\nIEND found")
+        print("\n4. IEND found")
 
         print("\n######################")
         print("# Reading IEND chunk #")
@@ -28,4 +28,4 @@ def findIEND (hexArray):
         print(var)
 
     else:
-        print("\nIEND not found")
+        print("\n4. IEND not found")

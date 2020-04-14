@@ -38,6 +38,9 @@ A file format chosen : PNG
 ![Zdjęcie projektu ](github_images/iend_terminal.png "fig:")
 [fig:my~l~abel]
 
+# 7.tIME analizing function
 
+![Zdjęcie projektu ](github_images/tIME_terminal.png "fig:")
+[fig:my~l~abel]
 
 
