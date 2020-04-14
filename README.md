@@ -53,3 +53,10 @@ A file format chosen : PNG
 ![Zdjęcie projektu ](github_images/text_terminal.png "fig:")
 [fig:my~l~abel]
 
+# 10.Added chunk deleting function 
+
+![Zdjęcie projektu ](github_images/chunkDelete_terminal.png "fig:")
+[fig:my~l~abel]
+
+
+

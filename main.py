@@ -13,6 +13,7 @@ from analizeIHDR import *
 from readIDAT import *
 from findIEND import *
 from ancillaryChunks import *
+from anonimize import *
 
 ####################
 #   Main file      #
@@ -37,6 +38,21 @@ if x==True:
     # Analizing ancillary chunks
     findAncillary(hexArray)
     # end
+
+    0#print(hexArray)
+
+    # Chunk anonymisation
+    print("\n######################")
+    print("# Removing chunks    #")
+    print("######################")
+
+    hexArray=chunkRemove(hexArray,"74455874")
+    hexArray=chunkRemove(hexArray,"7A545874")
+    hexArray=chunkRemove(hexArray,"74494d45")
+    # end
+
+    # findAncillary(hexArray)
+    #print(hexArray)
 
     showImage(imageName)
     fourierTransform(imageName)
