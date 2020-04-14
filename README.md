@@ -43,8 +43,13 @@ A file format chosen : PNG
 ![Zdjęcie projektu ](github_images/tIME_terminal.png "fig:")
 [fig:my~l~abel]
 
-# 7.gAMA chunk finding function 
+# 8.gAMA chunk finding function 
 
 ![Zdjęcie projektu ](github_images/gamma_terminal.png "fig:")
+[fig:my~l~abel]
+
+# 9.tEXt chunk analizing function 
+
+![Zdjęcie projektu ](github_images/text_terminal.png "fig:")
 [fig:my~l~abel]
 

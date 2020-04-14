@@ -6,6 +6,7 @@ import os
 sys.path.append(os.path.abspath("/"))
 from findTime import *
 from findGamma import *
+from findText import *
 
 # Function that finds ancillaryChunks
 def findAncillary (hexArray):
@@ -15,3 +16,6 @@ def findAncillary (hexArray):
 
     # Finding gAMA chunk function
     findGamma(hexArray)
+
+    # Finding tEXt chunk function
+    findText(hexArray)
