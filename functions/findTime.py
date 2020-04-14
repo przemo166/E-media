@@ -5,7 +5,7 @@ def findTime (hexArray):
     position = hexArray.find("74494d45")
 
     if position!=-1:
-        print("5. tIME found")
+        print("\n5. tIME found")
 
         ##############################################################
         # The tIME chunk gives the time of the last image            #
@@ -52,4 +52,4 @@ def findTime (hexArray):
         print(var)
 
     else:
-        print("5. tIME not found")
+        print("\n5. tIME not found")
