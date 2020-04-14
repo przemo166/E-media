@@ -13,6 +13,8 @@ from analizeIHDR import *
 from readIDAT import *
 from findIEND import *
 from ancillaryChunks import *
+from anonimize import *
+from tEXtread import *
 
 ####################
 #   Main file      #
@@ -23,13 +25,16 @@ imageName = input("File name : ")
 # A variable to check if our file is png file
 x = checkPng(imageName)
 
-# Further actions (if we have a png file)
+# Further actions (if we have a png file)ba
 if x==True:
     print("Signature ok\n")
     hexArray = imageConvert(imageName)
     # Analizing critical chunks
     analizeIHDR(hexArray)
     analizePLTE(hexArray)
+    tEXt_show(hexArray,"74455874")
+    tRXt_remove(hexArray, "74455874")
+    tRXt_remove(hexArray,"7A545874")
     readIDAT(hexArray)
     findIEND(hexArray)
     # end
