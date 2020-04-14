@@ -33,8 +33,8 @@ if x==True:
     analizeIHDR(hexArray)
     analizePLTE(hexArray)
     tEXt_show(hexArray,"74455874")
-    tRXt_remove(hexArray, "74455874")
-    tRXt_remove(hexArray,"7A545874")
+    Chunk_Remove(hexArray, "74455874")
+    Chunk_Remove(hexArray,"7A545874")
     readIDAT(hexArray)
     findIEND(hexArray)
     # end
