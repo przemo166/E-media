@@ -33,3 +33,11 @@ Wybrany format plików : PNG
 ![Zdjęcie projektu ](github_images/idat_text_file.png "fig:")
 [fig:my~l~abel]
 
+# 6.IEND finding function
+
+![Zdjęcie projektu ](github_images/iend_terminal.png "fig:")
+[fig:my~l~abel]
+
+
+
+

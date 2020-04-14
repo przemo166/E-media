@@ -11,6 +11,7 @@ from checkSignature import *
 from analizePLTE import *
 from analizeIHDR import *
 from readIDAT import *
+from findIEND import *
 
 ####################
 #   Main file      #
@@ -29,6 +30,7 @@ if x==True:
     analizeIHDR(hexArray)
     analizePLTE(hexArray)
     readIDAT(hexArray)
+    findIEND(hexArray)
     # end
     showImage(imageName)
     fourierTransform(imageName)
