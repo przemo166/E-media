@@ -1,6 +1,6 @@
 # E-media-> rok akademicki 2019/20
 
-# A file format chosen : PNG
+A file format chosen : PNG
 
 # 1.Show image function 
 
