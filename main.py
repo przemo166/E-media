@@ -4,12 +4,13 @@
 import sys
 import os
 sys.path.append(os.path.abspath("functions"))
-from analizeIHDR import *
 from bytesArray import *
 from showImage import *
 from fourierTransform import *
 from checkSignature import *
 from analizePLTE import *
+from analizeIHDR import *
+from readIDAT import *
 
 ####################
 #   Main file      #
@@ -27,6 +28,7 @@ if x==True:
     # Analizing critical chunks
     analizeIHDR(hexArray)
     analizePLTE(hexArray)
+    readIDAT(hexArray)
     # end
     showImage(imageName)
     fourierTransform(imageName)

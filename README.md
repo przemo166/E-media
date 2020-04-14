@@ -25,4 +25,11 @@ Wybrany format plików : PNG
 ![Zdjęcie projektu ](github_images/PLTE_file.png "fig:")
 [fig:my~l~abel]
 
+# 5.IDAT reading function
+
+![Zdjęcie projektu ](github_images/idat_terminal.png "fig:")
+[fig:my~l~abel]
+
+![Zdjęcie projektu ](github_images/idat_text_file.png "fig:")
+[fig:my~l~abel]
 

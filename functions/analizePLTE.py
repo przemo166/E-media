@@ -61,7 +61,7 @@ def analizePLTE (hexArray):
 
         f.close()
 
-        print("Entries saved in .txt file in /data directory\n")
+        print("Entries saved in a .txt file in /data directory\n")
 
     else:
         print("\nPLTE not found")
