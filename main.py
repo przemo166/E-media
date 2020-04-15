@@ -38,8 +38,8 @@ if x==True:
 
     # Analizing critical chunks
     analizeIHDR(hexArray)
-    analizePLTE(hexArray)
-    readIDAT(hexArray)
+    analizePLTE(hexArray,imageName)
+    readIDAT(hexArray,imageName)
     findIEND(hexArray)
     # end
 

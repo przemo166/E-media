@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 # Function that reads what IDAT chunk contains
-def readIDAT (hexArray):
+def readIDAT (hexArray,imageName):
     position = hexArray.find("49444154")
 
     # The find() method returns the index
@@ -29,6 +29,9 @@ def readIDAT (hexArray):
         print("\n")
 
         f = open("data/data_IDAT_chunk.txt", "w")
+
+        var = "Data saved from file :" + str(imageName) + "\n" + "\n"
+        f.write(var)
 
         while i < chunkLenghtDecimal:
 

@@ -4,7 +4,7 @@
 from enum import Enum
 
 # Function that analizes the PLTE chunk
-def analizePLTE (hexArray):
+def analizePLTE (hexArray,imageName):
     position = hexArray.find("504c5445")
 
     # The find() method returns the index
@@ -39,6 +39,9 @@ def analizePLTE (hexArray):
         print("\n")
 
         f = open("data/data_PLTE_chunk.txt", "w")
+
+        var = "Data saved from file :" + str(imageName) + "\n" + "\n"
+        f.write(var)
 
         while i < chunkLenghtDecimal/3:
 
