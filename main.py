@@ -15,6 +15,7 @@ from ancillaryChunks import *
 from anonimize import *
 from saveNewPng import *
 from check import *
+from exifFinder import *
 
 ####################
 #   Main file      #
@@ -67,6 +68,9 @@ if x==True:
     fourierTransform(newName)
     # end
 
+    # Exif finding function
+    findEXIF(newName)
+    # end
 
 # If our file is not png file we do nothing
 else :

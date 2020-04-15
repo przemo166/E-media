@@ -34,4 +34,9 @@ A file format chosen : PNG
 ![Test Image 1](github_images/example2_3.png)
 ![Test Image 1](github_images/example2_4.png)
 
+# Added finding exif's from PIL and PIL.ExifTags library 
+
+![Test Image 1](github_images/findingExif.png)
+
+
 
