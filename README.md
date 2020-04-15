@@ -11,15 +11,10 @@ A file format chosen : PNG
 
 # Plots for first example  :
 
-![Zdjęcie projektu ](github_images/example1_1.png "fig:") 
-[fig:mylabel]
-
-![Zdjęcie projektu ](github_images/example1_2.png "fig:") 
-[fig:mylabel]
+![Test Image 1](github_images/example1_1.png)
+![Test Image 1](github_images/example1_2.png)
 
 # Data for first example (1) :
 
-![Zdjęcie projektu ](github_images/example1_3.png "fig:") 
-[fig:mylabel]
-
+![Test Image 1](github_images/example1_3.png)
 
