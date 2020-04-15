@@ -5,7 +5,6 @@ import sys
 import os
 sys.path.append(os.path.abspath("functions"))
 from bytesArray import *
-from showImage import *
 from fourierTransform import *
 from checkSignature import *
 from analizePLTE import *
@@ -65,7 +64,6 @@ if x==True:
     # end
 
     # Showing new image and fourier transform
-    showImage(newName)
     fourierTransform(newName)
     # end
 

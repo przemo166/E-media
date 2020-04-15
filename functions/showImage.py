@@ -6,4 +6,4 @@ import cv2
 # Function that shows our image
 def showImage(imageName):
     img = cv2.imread('created_files/{}'.format(imageName))
-    cv2.imshow('Our image',img)
+    cv2.imshow('created_files/{}'.format(imageName),img)
