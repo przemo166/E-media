@@ -14,7 +14,24 @@ A file format chosen : PNG
 ![Test Image 1](github_images/example1_1.png)
 ![Test Image 1](github_images/example1_2.png)
 
-# Data for first example (1) :
+# Data for first example :
 
 ![Test Image 1](github_images/example1_3.png)
+
+# Second example 
+# Program output for second example  :
+
+![Test Image 1](github_images/2_1.png)
+![Test Image 1](github_images/2_2.png)
+
+# Plots for second example  :
+
+![Test Image 1](github_images/example2_1.png)
+![Test Image 1](github_images/example2_2.png)
+
+# Data for second example :
+
+![Test Image 1](github_images/example2_3.png)
+![Test Image 1](github_images/example2_4.png)
+
 
