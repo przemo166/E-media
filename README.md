@@ -4,9 +4,6 @@ A file format chosen : PNG
 
 # 1.Show image function 
 
-<p align="center">
-  <github_images/showImage.png />
-</p>
 ![Zdjęcie projektu ](github_images/showImage.png "fig:") 
 [fig:my~l~abel]
 
