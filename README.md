@@ -5,7 +5,7 @@ A file format chosen : PNG
 # First example 
 # An example program output (1) :
 
-![Zdjęcie projektu ](github_images/a1_1.png "fig:") 
+![Zdjęcie projektu ](github_images/1_1.png "fig:") 
 [fig:mylabel]
 ![Zdjęcie projektu ](github_images/1_2.png "fig:") 
 [fig:mylabel]
