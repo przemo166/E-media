@@ -1,66 +1,202 @@
-# E-media-> rok akademicki 2019/20
+# E-media ( academic year : 2019/20 )
 
 A file format chosen : PNG
 
-# 1.Show image function 
+# First example 
+# An example program output (1) :
 
-![Zdjęcie projektu ](github_images/showImage.png "fig:") 
-[fig:my~l~abel]
+File name : matlab_logo.png
+New file name : new_matlab_logo.png
+Signature ok
 
-# 2.Fourier transform function
 
-![Zdjęcie projektu ](github_images/fourier.png "fig:") 
-[fig:my~l~abel]
+1. IHDR found
 
-# 3.IHDR analizing function
+######################
+# Reading IHDR chunk #
+######################
 
-![Zdjęcie projektu ](github_images/IHDR.png "fig:") 
-[fig:my~l~abel]
+Width : 667
+Height : 599
+Bit depth : 8
+Colour type : TRUECOLOUR_WITH_ALPHA
+Compression method : DEFLATE_INFLATE
+Filter method : NONE
+Interlace method : NULL
 
-# 4.PLTE analizing function
+2. PLTE not found
 
-![Zdjęcie projektu ](github_images/PLTE_terminal.png "fig:")
-[fig:my~l~abel]
+3. IDAT found
 
-![Zdjęcie projektu ](github_images/PLTE_file_new.png "fig:")
-[fig:my~l~abel]
+######################
+# Reading IDAT chunk #
+######################
 
-# 5.IDAT reading function
+File name : matlab_logo.png
+New file name : new_matlab_logo.png
+Signature ok
 
-![Zdjęcie projektu ](github_images/idat_terminal.png "fig:")
-[fig:my~l~abel]
 
-![Zdjęcie projektu ](github_images/idat_text_file.png "fig:")
-[fig:my~l~abel]
+1. IHDR found
 
-# 6.IEND finding function
+######################
+# Reading IHDR chunk #
+######################
 
-![Zdjęcie projektu ](github_images/iend_terminal.png "fig:")
-[fig:my~l~abel]
+Width : 667
+Height : 599
+Bit depth : 8
+Colour type : TRUECOLOUR_WITH_ALPHA
+Compression method : DEFLATE_INFLATE
+Filter method : NONE
+Interlace method : NULL
 
-# 7.tIME analizing function
+2. PLTE not found
 
-![Zdjęcie projektu ](github_images/tIME_terminal.png "fig:")
-[fig:my~l~abel]
+3. IDAT found
 
-# 8.gAMA chunk finding function 
+######################
+# Reading IDAT chunk #
+######################
 
-![Zdjęcie projektu ](github_images/gamma_terminal.png "fig:")
-[fig:my~l~abel]
 
-# 9.tEXt chunk analizing function 
+Output saved in a .txt file in /data directory
 
-![Zdjęcie projektu ](github_images/text_terminal.png "fig:")
-[fig:my~l~abel]
 
-# 10.Added chunk deleting function 
+4. IEND found
 
-![Zdjęcie projektu ](github_images/chunkDelete_terminal.png "fig:")
-[fig:my~l~abel]
+######################
+# Reading IEND chunk #
+######################
 
-# 11.Added checking function 
+Chunk lenght : 0
 
-![Zdjęcie projektu ](github_images/check_terminal.png "fig:")
-[fig:my~l~abel]
+
+5. tIME found
+
+######################
+# Reading tIME chunk #
+######################
+
+ Year : 2017
+ Month : 3
+ Day : 7
+ Hour : 4
+ Minute : 11
+ Second : 56
+
+6. gAMA found
+
+######################
+# Reading gAMA chunk #
+######################
+
+Image gamma : 45455
+
+7. tEXtfound
+
+######################
+# Reading tEXt chunk #
+######################
+
+tEXt Content: 
+ commentFile source: https://commons.wikimedia.org/wiki/File:Matlab_Logo.png
+
+######################
+# Removing chunks    #
+######################
+
+Deleted 10 chunks with signature: 74455874
+
+Deleted 0 chunks with signature: 7A545874
+
+Deleted 1 chunks with signature: 74494d45
+
+Deleted 1 chunks with signature: 67414d41
+
+##########################
+# Anonimization check    #
+##########################
+
+5. tIME not found
+
+6. gAMA not found
+
+7. tEXt not found
+
+Output saved in a .txt file in /data directory
+
+
+4. IEND found
+
+######################
+# Reading IEND chunk #
+######################
+
+Chunk lenght : 0
+
+
+5. tIME found
+
+######################
+# Reading tIME chunk #
+######################
+
+ Year : 2017
+ Month : 3
+ Day : 7
+ Hour : 4
+ Minute : 11
+ Second : 56
+
+6. gAMA found
+
+######################
+# Reading gAMA chunk #
+######################
+
+Image gamma : 45455
+
+7. tEXtfound
+
+######################
+# Reading tEXt chunk #
+######################
+
+tEXt Content: 
+ commentFile source: https://commons.wikimedia.org/wiki/File:Matlab_Logo.png
+
+######################
+# Removing chunks    #
+######################
+
+Deleted 10 chunks with signature: 74455874
+
+Deleted 0 chunks with signature: 7A545874
+
+Deleted 1 chunks with signature: 74494d45
+
+Deleted 1 chunks with signature: 67414d41
+
+##########################
+# Anonimization check    #
+##########################
+
+5. tIME not found
+
+6. gAMA not found
+
+7. tEXt not found
+
+# Plots for example (1) :
+
+![Zdjęcie projektu ](github_images/example1_1.png "fig:") 
+[fig:mylabel]
+
+![Zdjęcie projektu ](github_images/example1_2.png "fig:") 
+[fig:mylabel]
+
+![Zdjęcie projektu ](github_images/example1_3.png "fig:") 
+[fig:mylabel]
 
 
