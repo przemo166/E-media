@@ -9,12 +9,11 @@ File name : matlab_logo.png
 New file name : new_matlab_logo.png
 Signature ok
 
-
 1. IHDR found
 
-######################
-# Reading IHDR chunk #
-######################
+/######################
+/# Reading IHDR chunk #
+/######################
 
 Width : 667
 Height : 599
@@ -28,9 +27,9 @@ Interlace method : NULL
 
 3. IDAT found
 
-######################
-# Reading IDAT chunk #
-######################
+/######################
+/# Reading IDAT chunk #
+/######################
 
 File name : matlab_logo.png
 New file name : new_matlab_logo.png
@@ -39,9 +38,9 @@ Signature ok
 
 1. IHDR found
 
-######################
-# Reading IHDR chunk #
-######################
+/######################
+/# Reading IHDR chunk #
+/######################
 
 Width : 667
 Height : 599
@@ -55,9 +54,9 @@ Interlace method : NULL
 
 3. IDAT found
 
-######################
-# Reading IDAT chunk #
-######################
+/######################
+/# Reading IDAT chunk #
+/######################
 
 
 Output saved in a .txt file in /data directory
@@ -65,18 +64,18 @@ Output saved in a .txt file in /data directory
 
 4. IEND found
 
-######################
-# Reading IEND chunk #
-######################
+/######################
+/# Reading IEND chunk #
+/######################
 
 Chunk lenght : 0
 
 
 5. tIME found
 
-######################
-# Reading tIME chunk #
-######################
+/######################
+/# Reading tIME chunk #
+/######################
 
  Year : 2017
  Month : 3
@@ -87,24 +86,24 @@ Chunk lenght : 0
 
 6. gAMA found
 
-######################
-# Reading gAMA chunk #
-######################
+/######################
+/# Reading gAMA chunk #
+/######################
 
 Image gamma : 45455
 
 7. tEXtfound
 
-######################
-# Reading tEXt chunk #
-######################
+/######################
+/# Reading tEXt chunk #
+/######################
 
 tEXt Content: 
  commentFile source: https://commons.wikimedia.org/wiki/File:Matlab_Logo.png
 
-######################
-# Removing chunks    #
-######################
+/######################
+/# Removing chunks    #
+/######################
 
 Deleted 10 chunks with signature: 74455874
 
@@ -114,9 +113,9 @@ Deleted 1 chunks with signature: 74494d45
 
 Deleted 1 chunks with signature: 67414d41
 
-##########################
-# Anonimization check    #
-##########################
+/##########################
+/# Anonimization check    #
+/##########################
 
 5. tIME not found
 
@@ -129,18 +128,18 @@ Output saved in a .txt file in /data directory
 
 4. IEND found
 
-######################
-# Reading IEND chunk #
-######################
+/######################
+/# Reading IEND chunk #
+/######################
 
 Chunk lenght : 0
 
 
 5. tIME found
 
-######################
-# Reading tIME chunk #
-######################
+/######################
+/# Reading tIME chunk #
+/######################
 
  Year : 2017
  Month : 3
@@ -151,24 +150,24 @@ Chunk lenght : 0
 
 6. gAMA found
 
-######################
-# Reading gAMA chunk #
-######################
+/######################
+/# Reading gAMA chunk #
+/######################
 
 Image gamma : 45455
 
 7. tEXtfound
 
-######################
-# Reading tEXt chunk #
-######################
+/######################
+/# Reading tEXt chunk #
+/######################
 
 tEXt Content: 
  commentFile source: https://commons.wikimedia.org/wiki/File:Matlab_Logo.png
 
-######################
-# Removing chunks    #
-######################
+/######################
+/# Removing chunks    #
+/######################
 
 Deleted 10 chunks with signature: 74455874
 
@@ -178,9 +177,9 @@ Deleted 1 chunks with signature: 74494d45
 
 Deleted 1 chunks with signature: 67414d41
 
-##########################
-# Anonimization check    #
-##########################
+/##########################
+/# Anonimization check    #
+/##########################
 
 5. tIME not found
 
