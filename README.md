@@ -58,5 +58,9 @@ A file format chosen : PNG
 ![Zdjęcie projektu ](github_images/chunkDelete_terminal.png "fig:")
 [fig:my~l~abel]
 
+# 11.Added checking function 
+
+![Zdjęcie projektu ](github_images/check_terminal.png "fig:")
+[fig:my~l~abel]
 
 

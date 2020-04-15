@@ -53,6 +53,7 @@ if x==True:
     hexArray=chunkRemove(hexArray,"74455874")
     hexArray=chunkRemove(hexArray,"7A545874")
     hexArray=chunkRemove(hexArray,"74494d45")
+    hexArray=chunkRemove(hexArray,"67414d41")
     # end
 
     # Saving a new png file (ananomized)
