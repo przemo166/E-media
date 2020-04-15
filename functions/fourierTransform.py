@@ -7,7 +7,7 @@ import numpy as  np
 # A Fourier transform function
 def fourierTransform (imageName):
 
-    img = cv2.imread('example_files/{}'.format(imageName), cv2.IMREAD_GRAYSCALE)
+    img = cv2.imread('created_files//{}'.format(imageName), cv2.IMREAD_GRAYSCALE)
     f = np.fft.fft2(img)
     fshift = np.fft.fftshift(f)
     magnitude_spectrum = 20*np.log(np.abs(fshift))

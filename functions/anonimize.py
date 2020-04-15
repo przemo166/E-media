@@ -14,7 +14,7 @@ def chunkRemove(hexarray: str, signature: str):
         length_pos = position - 8
         length_str = hexarray[length_pos:position]
         length = int(length_str, 16)
-        chunk_length = length  * 2
+        chunk_length = (length+12)  * 2
         tmparray1 = hexarray[0:length_pos]
         tmparray2 = hexarray[length_pos + chunk_length:len(hexarray)]
         hexarray= ""
@@ -25,3 +25,9 @@ def chunkRemove(hexarray: str, signature: str):
     print("\nDeleted " + str(i) + " "+"chunks with signature: " + signature)
 
     return hexarray
+
+def terminalInfo ():
+
+    print("\n######################")
+    print("# Removing chunks    #")
+    print("######################")
