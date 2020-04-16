@@ -11,10 +11,10 @@ A file format chosen : PNG
 > Signature ok  
 >  
 >   
-> 1. IHDR found  
+>1. IHDR found  
 >  
 > ######################  
->\# Reading IHDR chunk \#  
+>\# Reading IHDR chunk  \#  
 > ######################  
 >  
 > Width : 667  
@@ -25,31 +25,31 @@ A file format chosen : PNG
 > Filter method : NONE  
 > Interlace method : NULL  
 >   
-> 2. PLTE not found  
+>2.PLTE not found  
 >  
-> 3. IDAT found  
+>3.IDAT found  
 >  
 > ######################  
-> \# Reading IDAT chunk \#  
+> \# Reading IDAT chunk  \#  
 > ######################  
 >   
 >  
 > Output saved in a .txt file in /data directory  
 >  
 >  
-> 4. IEND found  
+>4.IEND found  
 >  
 > ######################  
-> # Reading IEND chunk #  
+> \# Reading IEND chunk  \#  
 > ######################  
 >  
 > Chunk lenght : 0   
 >  
 >  
-> 5. tIME found  
+>5.tIME found  
 >  
 > ######################  
-> \# Reading tIME chunk \#  
+> \#  Reading tIME chunk  \#  
 > ######################  
 >  
 > Year : 2017  
@@ -62,12 +62,12 @@ A file format chosen : PNG
 > 6. gAMA found  
 >  
 > ######################  
-> \# Reading gAMA chunk \#  
+> \# Reading gAMA chunk  \#  
 > ######################  
 >  
 > Image gamma : 45455  
 >  
-> 7. tEXtfound  
+>7.tEXtfound  
 >  
 > ######################  
 > \# Reading tEXt chunk \#  
@@ -77,7 +77,7 @@ A file format chosen : PNG
 > commentFile source: https://commons.wikimedia.org/wiki/File:Matlab_Logo.png  
 >  
 > ######################  
-> \# Removing chunks    \#  
+> \#   Removing chunks    \#  
 > ######################  
 >  
 > Deleted 10 chunks with signature: 74455874  
@@ -89,7 +89,7 @@ A file format chosen : PNG
 > Deleted 1 chunks with signature: 67414d41  
 >  
 > ##########################  
-> \# Anonimization check    \#  
+> \#   Anonimization check    \#  
 > ##########################  
 >    
 > 5. tIME not found  
@@ -99,7 +99,7 @@ A file format chosen : PNG
 > 7. tEXt not found  
 >  
 > ######################  
-> \# Finding ExifTags \#  
+> \#  Finding ExifTags  \#  
 > ######################  
 >  
 > Exif's that has been found :  
