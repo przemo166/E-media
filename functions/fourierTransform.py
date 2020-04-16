@@ -27,15 +27,21 @@ def fourierTransform (imageName):
     phaseImg = np.concatenate((img, phaseSpectrum), axis=1)
 
     showImage(imageName)
-    cv2.imshow('example_files/{}'.format(imageName), img_and_magnitude)
-    cv2.setWindowTitle('example_files/{}'.format(imageName), "Magnitude spectrum")
 
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    cv2.namedWindow("Magnitude spectrum")
+    cv2.imshow("Magnitude spectrum", img_and_magnitude)
 
-    showImage(imageName)
-    cv2.imshow('example_files/{}'.format(imageName), phaseImg)
-    cv2.setWindowTitle('example_files/{}'.format(imageName), "Phase spectrum")
+    #cv2.setWindowTitle('example_files/{}'.format(imageName), "Magnitude spectrum")
+
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
+
+    # showImage(imageName)
+
+    cv2.namedWindow("Phase spectrum")
+    cv2.imshow("Phase spectrum", phaseImg)
+
+    #cv2.setWindowTitle('example_files/{}'.format(imageName), "Phase spectrum")
 
     cv2.waitKey(0)
     cv2.destroyAllWindows()
