@@ -14,7 +14,7 @@ A file format chosen : PNG
 > 1. IHDR found  
 >  
 > ######################  
->\# Reading IHDR chunk\#  
+>\# Reading IHDR chunk \#  
 > ######################  
 >  
 > Width : 667  
@@ -26,86 +26,86 @@ A file format chosen : PNG
 > Interlace method : NULL  
 >   
 > 2. PLTE not found  
-
-3. IDAT found
-
-######################
-# Reading IDAT chunk #
-######################
-
-
-Output saved in a .txt file in /data directory
-
-
-4. IEND found
-
-######################
-# Reading IEND chunk #
-######################
-
-Chunk lenght : 0
-
-
-5. tIME found
-
-######################
-# Reading tIME chunk #
-######################
-
- Year : 2017
- Month : 3
- Day : 7
- Hour : 4
- Minute : 11
- Second : 56
-
-6. gAMA found
-
-######################
-# Reading gAMA chunk #
-######################
-
-Image gamma : 45455
-
-7. tEXtfound
-
-######################
-# Reading tEXt chunk #
-######################
-
-tEXt Content: 
- commentFile source: https://commons.wikimedia.org/wiki/File:Matlab_Logo.png
-
-######################
-# Removing chunks    #
-######################
-
-Deleted 10 chunks with signature: 74455874
-
-Deleted 0 chunks with signature: 7A545874
-
-Deleted 1 chunks with signature: 74494d45
-
-Deleted 1 chunks with signature: 67414d41
-
-##########################
-# Anonimization check    #
-##########################
-
-5. tIME not found
-
-6. gAMA not found
-
-7. tEXt not found
-
-######################
-# Finding ExifTags #
-######################
-
-Exif's that has been found :
-chromaticity (0.3127, 0.329, 0.64, 0.33, 0.3, 0.6, 0.15, 0.06)
-dpi (96, 96)
-
+>  
+> 3. IDAT found  
+>  
+> ######################  
+> \# Reading IDAT chunk \#  
+> ######################  
+>   
+>  
+> Output saved in a .txt file in /data directory  
+>  
+>  
+> 4. IEND found  
+>  
+> ######################  
+> # Reading IEND chunk #  
+> ######################  
+>  
+> Chunk lenght : 0   
+>  
+>  
+> 5. tIME found  
+>  
+> ######################  
+> \# Reading tIME chunk \#  
+> ######################  
+>  
+> Year : 2017  
+> Month : 3  
+> Day : 7  
+> Hour : 4  
+> Minute : 11  
+> Second : 56  
+>  
+> 6. gAMA found  
+>  
+> ######################  
+> \# Reading gAMA chunk \#  
+> ######################  
+>  
+> Image gamma : 45455  
+>  
+> 7. tEXtfound  
+>  
+> ######################  
+> \# Reading tEXt chunk \#  
+> ######################  
+>  
+> tEXt Content:   
+> commentFile source: https://commons.wikimedia.org/wiki/File:Matlab_Logo.png  
+>  
+> ######################  
+> \# Removing chunks    \#  
+> ######################  
+>  
+> Deleted 10 chunks with signature: 74455874  
+>  
+> Deleted 0 chunks with signature: 7A545874  
+>  
+> Deleted 1 chunks with signature: 74494d45  
+>  
+> Deleted 1 chunks with signature: 67414d41  
+>  
+> ##########################  
+> \# Anonimization check    \#  
+> ##########################  
+>    
+> 5. tIME not found  
+>  
+> 6. gAMA not found  
+>  
+> 7. tEXt not found  
+>  
+> ######################  
+> \# Finding ExifTags \#  
+> ######################  
+>  
+> Exif's that has been found :  
+> chromaticity (0.3127, 0.329, 0.64, 0.33, 0.3, 0.6, 0.15, 0.06)  
+> dpi (96, 96)  
+>  
 
 ![Test Image 1](github_images/1_1.png)
 ![Test Image 1](github_images/1_2.png)
