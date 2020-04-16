@@ -1,6 +1,6 @@
 # E-media ( academic year : 2019/20 ) 
   
-Repo for first part of the project.   
+Repo for the first part of our  project.   
 A file format chosen : PNG
 
 # First example 
