@@ -11,7 +11,7 @@ A file format chosen : PNG
 > Signature ok  
 >  
 >   
->1. IHDR found  
+>1.IHDR found  
 >  
 > ######################  
 >\# Reading IHDR chunk  \#  
