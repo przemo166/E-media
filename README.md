@@ -14,7 +14,7 @@ A file format chosen : PNG
 > 1. IHDR found  
 >  
 > ######################  
-> # Reading IHDR chunk #  
+>\# Reading IHDR chunk\#  
 > ######################  
 >  
 > Width : 667  
