@@ -107,10 +107,6 @@ A file format chosen : PNG
 > dpi (96, 96)  
 >  
 
-![Test Image 1](github_images/1_1.png)
-![Test Image 1](github_images/1_2.png)
-![Test Image 1](github_images/1_3.png)
-
 # Plots for first example  :
 
 ![Test Image 1](github_images/example1_1.png)
